@@ -27,9 +27,11 @@ function total (clients) {
 function info(index) {
     return clients.find(client => client.index === index)
   }
+
   //6 Search function
-  function search(clients, query) {
-    return clients.filter(client => client.name.toLowerCase().includes(query.toLowerCase()) 
-  )
+  function search(query) {
+    const filteredSearch = clients.filter((client) => client.name.toLowerCase().includes(query.toLowerCase()));
+console.log(filteredSearch);
+return filteredSearch;
   }
   
