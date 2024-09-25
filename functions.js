@@ -30,8 +30,8 @@ function info(index) {
 
   //6 Search function
   function search(query) {
-    const filteredSearch = clients.filter((client) => client.name.toLowerCase().includes(query.toLowerCase()));
-console.log(filteredSearch);
-return filteredSearch;
+    const filteredSearch = clients.filter((client) => client.name.toLowerCase().includes(query.toLowerCase()))
+console.log(filteredSearch)
+return filteredSearch
   }
   
